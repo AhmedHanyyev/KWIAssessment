@@ -1,0 +1,27 @@
+This Automation code is build to test given tasks for the KWI WebPage and API testing for the posts endpoint.
+A Java project was built using your build tool Maven.
+Cucumber and Junit was utilized for BDD and Assertions respectively.
+Includes the necessary dependencies for project needs.
+Configuration file was created to store the base URL.
+=============================================================================================================
+To run UI tests you have to go src-> test-> java-> runners -> UITestRunner
+Right Click on any emtpy space in the class and run UITestRunner or other ways could be also done
+
+You can run UI automation in different Browsers like chrome, edge, headless, as well as remotely on a given IP.
+For that you have to use Maven command: mvn "-Dtest =runners.UITestRunner" verify -Dbrowser='String browser'
+refer to BrowserFactory Class to find what browser you want to run on.
+
+Test should be run in a minimized web since in maximized version Hamburger Button doesn't exist.
+=============================================================================================================
+To run API automation UI tests you have to go src-> test-> java-> runners -> ApiRunner
+Similarly Right click and run ApiRunner or other ways you like.
+Api doesn't populate database I believe it is dummy API for training. However API testing on loclahost saves data in locally
+but not in full body. For further API testing report check postman collection shared and Excell file shared previously.
+=============================================================================================================
+Reports are generated in target Folder:
+target -> cucumber-html-report -> right click on index.html -> open in -> Browser (choose whichever you like)
+
+
+
+
+
